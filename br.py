@@ -4,8 +4,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 # Load dataset
-file_path = "br.csv"
-df = pd.read_csv(file_path)
+df = pd.read_csv("br.csv")
 
 # Combine relevant text features for similarity calculation
 df["combined_features"] = df["genre"] + " " + df["author"]
