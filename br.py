@@ -1,5 +1,6 @@
 import streamlit as st
 import pandas as pd
+import base64
 from sklearn.metrics.pairwise import cosine_similarity
 from sklearn.feature_extraction.text import TfidfVectorizer
 
@@ -27,7 +28,33 @@ def recommend_books(book_title, top_n=5):
     recommended_books = [df.iloc[i[0]]["title"] for i in sorted_books]
     return recommended_books
 
-# Streamlit App
+# Function to encode GIF in base64
+def get_base64_of_gif(file_path):
+    with open(file_path, "rb") as gif_file:
+        encoded_gif = base64.b64encode(gif_file.read()).decode()
+    return f"data:image/gif;base64,{encoded_gif}"
+
+# Set background GIF
+gif_path = "book.gif"  # Change this to your local GIF file path
+base64_gif = get_base64_of_gif(gif_path)
+
+st.markdown(
+    f"""
+    <style>
+    body {{
+        background: url("{base64_gif}");
+        background-size: cover;
+    }}
+    .stApp {{
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+)
+
 st.title("📚 Book Recommendation System")
 st.write("Select a book title to get similar recommendations based on genre and author.")
 
