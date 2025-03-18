@@ -82,7 +82,8 @@ These features are **combined** to compute book similarity.
    - Finds the most similar books to the selected title.  
 
 3️⃣ **Recommendation Display**  
-   - Displays the top `N` similar books in the Streamlit app.  
+   - Displays the top `N` similar books in the Streamlit app.
+   - To use the app click here : https://bookrecommendation-4quwed4vshqsvtf4vfwyyn.streamlit.app/#170a906e  
 
 ---
 
@@ -95,18 +96,9 @@ These features are **combined** to compute book similarity.
 
 ---
 
-## 📜 License  
-
-This project is **open-source** and available under the **MIT License**.  
-
-📬 **Feel free to contribute and improve the project!**  
-
----
-
 ### 👨‍💻 Author  
-**Your Name**  
-[GitHub Profile](https://github.com/your-username) | [LinkedIn](https://linkedin.com/in/your-profile)  
+Developed by: **CH TEJA YADAV**  
+📧 Email: tejayadavch@gmail.com  
+💻 GitHub: https://github.com/chtejayadav  
+📢 Feel free to reach out for any questions or contributions!
 
----
-
-Would you like me to customize any section further? 🚀
