@@ -10,7 +10,7 @@ def get_base64_of_gif(file_path):
     return f"data:image/gif;base64,{encoded_gif}"
 
 # Set background GIF
-gif_path = "book2.gif"  # Change this to your local GIF file path
+gif_path = "book3.gif"  # Change this to your local GIF file path
 base64_gif = get_base64_of_gif(gif_path)
 
 st.markdown(
