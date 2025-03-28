@@ -100,5 +100,5 @@ These features are **combined** to compute book similarity.
 Developed by: **CH TEJA YADAV**  
 📧 Email: tejayadavch@gmail.com  
 💻 GitHub: https://github.com/chtejayadav  
-📢 Feel free to reach out for any questions or contributions!
+
 
